@@ -1,5 +1,5 @@
 import React from "react";
-import WeatherDisplay from "./WeatherDisplay";
+
 import InputCity from "./InputCity";
 
 const App: React.FC = () => {
@@ -7,7 +7,6 @@ const App: React.FC = () => {
     <div>
       <h1>Weather App!</h1>
       <InputCity />
-      <WeatherDisplay />
     </div>
   );
 };
