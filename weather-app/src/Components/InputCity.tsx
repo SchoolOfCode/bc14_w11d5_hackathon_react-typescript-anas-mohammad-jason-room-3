@@ -53,9 +53,10 @@ const InputCity = () => {
           temp={temp}
           humidity={humidity}
         />
-      ) : (
+      ) : success === false && clicked === true ? (
         <p>City not found</p>
-      )}
+      ) : ""
+	}
     </>
   );
 };
