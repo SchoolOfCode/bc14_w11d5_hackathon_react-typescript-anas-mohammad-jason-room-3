@@ -1,4 +1,6 @@
 # React/TypeScript Hackathon
+## Component Tree
+
 
 ## Challenge
 
@@ -77,3 +79,4 @@ If you get errors regarding missing types for the NPM packages that you're tryin
 - https://stackoverflow.com/a/39907679
 
 It's also worth searching that package's documentation/website for "TypeScript", in case it contains any direct guidance on how to use their package with TypeScript.
+
