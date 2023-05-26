@@ -1,31 +1,31 @@
-import React from 'react';
+import React from "react";
 
 // Initial goal to render:
 // Name of city, temp, humidity, sunrise and sunset, description (clouds)
 type WeatherProps = {
-	name: string;
-	description: string;
-	temp: number | string;
-	humidity: number | string;
+  name: string;
+  description: string;
+  temp: number;
+  humidity: number | null;
 };
 
 // function to fetch weather info
 const WeatherDisplay: React.FC<WeatherProps> = ({
-	name,
-	description,
-	temp,
-	humidity,
+  name,
+  description,
+  temp,
+  humidity,
 }) => {
-	return (
-		<>
-			<div className='weather'>
-				<h2>Weather in {name}</h2>
-				<p>{description}</p>
-				<p>{temp}C</p>
-				<p>{humidity}%</p>
-			</div>
-		</>
-	);
+  return (
+    <>
+      <div className="weather">
+        <h2>Weather in {name}</h2>
+        <p>{description}</p>
+        <p>{temp}C</p>
+        <p>{humidity}%</p>
+      </div>
+    </>
+  );
 };
 
 // const [name, setName] = useState<string>('');
