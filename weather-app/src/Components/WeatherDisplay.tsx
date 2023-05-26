@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import './App.css';
 type WeatherProps = {
   name: string;
   description: string;
@@ -12,14 +13,14 @@ const WeatherDisplay: React.FC<WeatherProps> = ({
   humidity,
 }) => {
   return (
-    <>
-      <div className="weather">
+    <div className='container'>
+      <div className='weather'>
         <h2>Weather in {name}</h2>
-        <p>{description}</p>
-        <p>{temp}C</p>
-        <p>{humidity}%</p>
+        <p>Description: {description}</p>
+        <p>Temperature: {temp}C</p>
+        <p>Humidity: {humidity}%</p>
       </div>
-    </>
+    </div>
   );
 };
 export default WeatherDisplay;

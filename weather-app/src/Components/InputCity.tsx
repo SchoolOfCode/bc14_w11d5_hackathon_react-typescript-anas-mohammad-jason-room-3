@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./App";
 // import moment from 'moment';
 // import GetWeather from './WeatherDisplay';
 import WeatherDisplay from "./WeatherDisplay";
@@ -38,6 +39,7 @@ const InputCity = () => {
   return (
     <>
       <input
+	  id='input'
         type="text"
         placeholder="Enter city"
         onKeyUp={(e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -45,7 +47,7 @@ const InputCity = () => {
           console.log(city);
         }}
       />
-      <button onClick={getWeather}>Submit</button>
+      <button id='button' onClick={getWeather}>Submit</button>
       {success === true && clicked === true ? (
         <WeatherDisplay
           name={name}
